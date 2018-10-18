@@ -50,6 +50,8 @@ fields:
     name: plans
     label: Plans
     description: A list of available plans
+    config:
+      labelField: title
     fields:
       - type: include
         name: include_plan
