@@ -125,3 +125,15 @@ fields:
       - type: text
         name: copyright
         label: Footer Copyright Text
+  - type: select
+    name: palette
+    label: Color Palette
+    description: The color palette for the site
+    default: cyan
+    config:
+      source:
+        type: custom
+      options:
+        - cyan
+        - green
+        - red
