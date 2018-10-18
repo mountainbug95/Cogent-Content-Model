@@ -60,4 +60,65 @@ fields:
     name: footer
     label: Footer Configuration
     description: The page footer
-    fields: []
+    fields:
+      - type: field_group
+        name: about
+        label: About Section
+        description: The footer about section
+        fields:
+          - type: textarea
+            name: title
+            label: About Section Title
+          - type: textarea
+            name: text
+            label: About section Text
+            config:
+              wysiwyg: true
+              schema:
+                format: markdown
+          - type: field_group_list
+            name: actions
+            label: About Section Action Buttons
+            config:
+              labelField: label
+            fields:
+              - type: include
+                name: include_action
+                label: Include action
+                template: action
+      - type: field_group
+        name: news
+        label: News Section
+        fields:
+          - type: text
+            name: title
+            label: News Section Title
+      - type: field_group
+        name: contact
+        fields:
+          - type: text
+            name: title
+            label: Contact Section Title
+          - type: field_group_list
+            name: contact_list
+            label: Contact Methods
+            description: A list of contact methods
+            config:
+              labelField: title
+            fields:
+              - type: text
+                name: title
+                label: Method Title
+              - type: textarea
+                name: text
+                label: Method Description
+              - type: text
+                name: icon
+                label: Method Icon
+                description: Font Awesome Icon
+              - type: text
+                name: url
+                label: URL
+      - type: text
+        name: copyright
+        label: Footer Copyright Text
