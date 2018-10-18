@@ -1,7 +1,33 @@
 ---
 label: Page
 is_partial: false
-fields: []
+fields:
+  - type: text
+    name: title
+    label: Page Title
+    config:
+      required: true
+  - type: textarea
+    name: subtitle
+    label: Page Subtitle
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+  - type: file
+    name: content_img_path
+    label: Content Image
+    description: The image displayed in the main content of the page
+  - type: select
+    name: sidebar
+    label: Sidebar
+    description: Sidebar position
+    config:
+      source:
+        type: custom
+      options:
+        - left
+        - right
 pages:
   - contact.md
   - left_sidebar.md
