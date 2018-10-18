@@ -46,9 +46,23 @@ fields:
       wysiwyg: true
       schema:
         format: markdown
-  - type: list
+  - type: field_group_list
     name: checks_col1
     label: First Checkmarks Column
-  - type: list
+    config:
+      labelField: text
+    fields:
+      - type: text
+        name: text
+        label: Checkmark Text
+        description: The text displayed beside the checkmark
+  - type: field_group_list
     name: checks_col2
     label: Second Checkmarks Column
+    config:
+      labelField: text
+    fields:
+      - type: text
+        name: text
+        label: Checkmark Text
+        description: The text displayed beside the checkmark
