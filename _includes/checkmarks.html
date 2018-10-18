@@ -4,7 +4,7 @@
         <div class="row gtr-200">
             <div class="col-5 col-12-medium">
                 <h2>{{ include.section.title | newline_to_br }}</h2>
-                <p>{{ include.section.text }}</p>
+                {{ include.section.text | markdownify }}
             </div>
             <div class="col-7 col-12-medium">
                 <div class="row gtr-200">

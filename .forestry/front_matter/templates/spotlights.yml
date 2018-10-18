@@ -1,0 +1,71 @@
+---
+label: Spotlights Section
+is_partial: true
+fields:
+  - type: text
+    name: section_id
+    label: Section ID
+    description: The section ID
+    default: two
+    config:
+      required: true
+  - type: select
+    name: background_style
+    label: Background Style
+    description: The section background style
+    default: style2
+    config:
+      source:
+        type: custom
+      options:
+        - style1
+        - style2
+        - style3
+        - style4
+  - type: text
+    name: identifier
+    label: Section Name
+    description: 'The name of the section, this value is not displayed anywhere on the page'
+    default: component
+    config:
+      required: true
+  - type: text
+    name: component
+    hidden: true
+    default: spotlights.html
+    config:
+      required: true
+  - type: field_group_list
+    name: spotlights_list
+    label: Spotlights List
+    description: The list of section spotlights
+    config:
+      labelField: title
+    fields:
+      - type: text
+        name: title
+        label: Spotlight Title
+      - type: textarea
+        name: text
+        label: Spotlight Text
+        config:
+          wysiwyg: true
+          schema:
+            format: markdown
+      - type: field_group
+        name: img
+        label: Spotlight Image
+        fields:
+          - type: select
+            name: position
+            label: Image position
+            description: The side of the spotlight the image is to apear on
+            config:
+              source:
+                type: custom
+              options:
+                - left
+                - right
+          - type: file
+            name: path
+            label: Image

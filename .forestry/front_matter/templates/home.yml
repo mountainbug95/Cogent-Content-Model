@@ -2,6 +2,60 @@
 label: Hpme
 hide_body: true
 is_partial: false
-fields: []
+fields:
+  - type: text
+    name: title
+    label: Title
+    description: The title of the page
+    config:
+      required: true
+  - type: field_group
+    name: banner
+    description: The home page banner
+    fields:
+      - type: text
+        name: title
+        label: Banner Title
+      - type: textarea
+        name: subtitle
+        label: Banner Subtitle
+        config:
+          wysiwyg: true
+          schema:
+            format: markdown
+      - type: field_group_list
+        name: actions
+        label: Banner Action Buttons
+        config:
+          labelField: label
+        fields:
+          - type: include
+            name: include_action
+            label: Include action
+            template: action
+      - type: field_group
+        name: browser_mockup
+        label: Browser Mockup
+        description: Displays a mockup browser window containing the selected image
+        fields:
+          - type: file
+            name: img
+            label: Image
+            description: Image to be displayed in mockup browser
+          - type: text
+            name: mock_url
+            label: Mock Window URL
+            description: >-
+              The URL to be displayed in the address bar of the mockup browser
+              window
+  - type: blocks
+    name: sections
+    label: Sections
+    description: Home sections
+    template_types:
+      - features
+      - spotlights
+      - checkmarks
+      - plans
 pages:
   - index.md

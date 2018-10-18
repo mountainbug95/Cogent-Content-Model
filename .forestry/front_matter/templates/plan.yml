@@ -1,0 +1,43 @@
+---
+label: Plan
+is_partial: true
+fields:
+  - type: text
+    name: title
+    label: Plan Title
+  - type: field_group_list
+    name: features
+    label: Features List
+    description: A list of features for the plan
+    config:
+      labelField: text
+    fields:
+      - type: text
+        name: text
+        label: Feature Description
+        description: The name/description of a the feature
+      - type: boolean
+        name: include
+        label: Included
+        description: >-
+          If the feature is includeded in the plan, it will be displayed as bold
+          text
+  - type: text
+    name: price
+    label: Plan Price
+  - type: field_group
+    name: button
+    label: Plan Action Button
+    description: The button displayed at the bottom of the plan
+    fields:
+      - type: textarea
+        name: label
+        label: Button Label
+        description: the text displayed inside the button
+      - type: text
+        name: url
+        label: URL
+      - type: boolean
+        name: is_primary
+        label: Is Primary
+        description: Gives the button a primary color scheme

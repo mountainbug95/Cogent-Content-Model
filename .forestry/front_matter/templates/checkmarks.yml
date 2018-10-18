@@ -1,0 +1,54 @@
+---
+label: Checkmarks Section
+is_partial: true
+fields:
+  - type: text
+    name: section_id
+    label: Section ID
+    description: The section ID
+    default: three
+    config:
+      required: true
+  - type: select
+    name: background_style
+    label: Background Style
+    description: The section background style
+    default: style3
+    config:
+      source:
+        type: custom
+      options:
+        - style1
+        - style2
+        - style3
+        - style4
+  - type: text
+    name: identifier
+    label: Section Name
+    description: 'The name of the section, this value is not displayed anywhere on the page'
+    default: checkmarks
+    config:
+      required: true
+  - type: text
+    name: component
+    hidden: true
+    default: checkmarks.html
+    config:
+      required: true
+  - type: textarea
+    name: title
+    label: Section Title
+  - type: textarea
+    name: text
+    label: Section Text
+    description: the text that is displayed below the section title
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+  - type: list
+    name: checks_col1
+    label: First Checkmarks Column
+  - type: list
+    name: checks_col2
+    label: Second Checkmarks Column

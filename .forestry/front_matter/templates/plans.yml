@@ -1,0 +1,77 @@
+---
+label: Plans section
+is_partial: true
+fields:
+  - type: text
+    name: section_id
+    label: Section ID
+    description: The section ID
+    default: four
+    config:
+      required: true
+  - type: select
+    name: background_style
+    label: Background Style
+    description: The section background style
+    default: style4
+    config:
+      source:
+        type: custom
+      options:
+        - style1
+        - style2
+        - style3
+        - style4
+  - type: text
+    name: identifier
+    label: Section Name
+    description: 'The name of the section, this value is not displayed anywhere on the page'
+    default: plans
+    config:
+      required: true
+  - type: text
+    name: component
+    hidden: true
+    default: plans.html
+    config:
+      required: true
+  - type: text
+    name: title
+    label: Section Title
+  - type: textarea
+    name: subtitle
+    label: Section Subtitle
+    description: The text displayed below the section title
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+  - type: field_group_list
+    name: plans
+    label: Plans
+    description: A list of available plans
+    fields:
+      - type: include
+        name: include_plan
+        label: Plan
+        template: plan
+  - type: field_group
+    name: footer_button
+    label: Footer Button
+    description: The button displayed at the bottom of the plans section
+    fields:
+      - type: text
+        name: text
+        label: Footer Button Side Text
+        description: The text displayed to the left of the section footer button
+      - type: text
+        name: label
+        label: Button Text
+        description: The text displayed inside the button
+      - type: boolean
+        name: is_primary
+        label: Is Primary
+        description: Gives the button a primary color scheme
+      - type: text
+        name: url
+        label: URL

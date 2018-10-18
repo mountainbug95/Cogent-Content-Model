@@ -131,6 +131,7 @@ fields:
     description: The color palette for the site
     default: cyan
     config:
+      required: true
       source:
         type: custom
       options:

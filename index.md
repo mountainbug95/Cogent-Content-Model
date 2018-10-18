@@ -36,6 +36,7 @@ sections:
           Vivamus nec odio tempor etiam aliquam tincidunt. Aliquam lorem et
           cursus dolore consequat et feugiat nulla tempus.
         icon: fa-mobile-phone
+    identifier: features
     component: features.html
     template: features
   - section_id: two
@@ -63,6 +64,7 @@ sections:
         img:
           position: right
           path: images/pic02.jpg
+    identifier: spotlights
     component: spotlights.html
     template: spotlights
   - title: |-
@@ -86,6 +88,7 @@ sections:
       - text: Sed vulputate magna
       - text: Tincidunt elit sed rhoncus
       - text: Quisque nec enim
+    identifier: checkmarks
     component: checkmarks.html
     template: checkmarks
   - title: Magna feugiat sed consequat
@@ -151,6 +154,7 @@ sections:
       label: Learn More
       is_primary: false
       url: no_sidebar.md
+    identifier: plans
     component: plans.html
     template: plans
 layout: home

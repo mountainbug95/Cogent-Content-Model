@@ -4,9 +4,7 @@
     <div class="container">
         <header class="major">
             <h2>{{ section.title }}</h2>
-            {% if section.subtitle %}
-                <p>{{ section.subtitle }}</p>
-            {% endif %}
+            {{ section.subtitle | markdownify }}
         </header>
         <div class="plans">
             <div class="row gtr-200 gtr-uniform">

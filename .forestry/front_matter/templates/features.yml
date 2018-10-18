@@ -1,0 +1,58 @@
+---
+label: Features Section
+is_partial: true
+fields:
+  - type: text
+    name: section_id
+    label: Section ID
+    description: The section ID
+    default: one
+    config:
+      required: true
+  - type: select
+    name: background_style
+    label: Background Style
+    description: The section background style
+    default: style1
+    config:
+      source:
+        type: custom
+      options:
+        - style1
+        - style2
+        - style3
+        - style4
+  - type: text
+    name: identifier
+    label: Section Name
+    description: 'The name of the section, this value is not displayed anywhere on the page'
+    default: features
+    config:
+      required: true
+  - type: text
+    name: component
+    hidden: true
+    default: features.html
+    config:
+      required: true
+  - type: field_group_list
+    name: features_list
+    label: Features List
+    description: A list of features
+    config:
+      labelField: title
+    fields:
+      - type: text
+        name: title
+        label: Feature Title
+      - type: textarea
+        name: text
+        label: Feature description
+        config:
+          wysiwyg: true
+          schema:
+            format: markdown
+      - type: text
+        name: icon
+        label: Feature icon
+        description: Font Awesome icons
