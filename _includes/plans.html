@@ -1,0 +1,23 @@
+<!-- Four -->
+{% assign section = include.section %}
+<section id="{{ section.section_id }}" class="wrapper {{ section.background_style }} special">
+    <div class="container">
+        <header class="major">
+            <h2>{{ section.title }}</h2>
+            {% if section.subtitle %}
+                <p>{{ section.subtitle }}</p>
+            {% endif %}
+        </header>
+        <div class="plans">
+            <div class="row gtr-200 gtr-uniform">
+                {% for plan in section.plans %}
+                    
+                    {% include plan.html page=include.page plan=plan %}
+                {% endfor %}
+            </div>
+        </div>
+        {% if section.footer_button %}
+            <p>{{ section.footer_button.text }} <a href="{{ section.footer_button.url | link | relative_url }}" class="button inline{% if section.footer_button.is_primary %} primary{% endif %}">{{ section.footer_button.label }}</a></p>
+        {% endif %}
+    </div>
+</section>

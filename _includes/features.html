@@ -1,0 +1,13 @@
+<!-- One -->
+<section id="{{ include.section.section_id }}" class="wrapper {{ include.section.background_style }}">
+    <div class="container">
+        <div class="row">
+            {% for feature in include.section.features_list %}
+                <div class="col-4 col-12-medium">
+                    <h3 class="icon {{ feature.icon }}">{{ feature.title }}</h3>
+                    {{ feature.text | markdownify }}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

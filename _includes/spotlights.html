@@ -1,0 +1,25 @@
+<!-- Two -->
+<section id="{{ include.section.section_id }}" class="wrapper {{ include.section.background_style }}">
+    <div class="container">
+        {% for spotlight in include.section.spotlights_list %}
+            <section class="spotlight {{ spotlight.img.position }}">
+                <div class="row gtr-200 aln-middle">
+                    {% if spotlight.img.position == 'left' %}
+                        <div class="col-4 col-12-medium">
+                            <span class="image fit"><img src="{{ spotlight.img.path | relative_url }}" alt="" /></span>
+                        </div>
+                    {% endif %}
+                    <div class="col-8 col-12-medium">
+                        <h2>{{ spotlight.title }}</h2>
+                        {{ spotlight.text | markdownify }}
+                    </div>
+                    {% if spotlight.img.position == 'right' %}
+                        <div class="col-4 col-12-medium imp-medium">
+                            <span class="image fit"><img src="{{ spotlight.img.path | relative_url }}" alt="" /></span>
+                        </div>
+                    {% endif %}
+                </div>
+            </section>
+        {% endfor %}
+    </div>
+</section>

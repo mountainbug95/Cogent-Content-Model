@@ -1,0 +1,84 @@
+title: Cogent
+baseurl: /
+landing_template: home
+header:
+  submenu:
+    title: Layouts
+    items:
+      - title: Left Sidebar
+        url: left_sidebar.md
+      - title: Right Sidebar
+        url: right_sidebar.md
+      - title: No Sidebar
+        url: no_sidebar.md
+  actions:
+    - label: Sign Up
+      url: no_sidebar.md
+      is_primary: false
+footer:
+  about:
+    title: |-
+      Commodo sed amet lipsum
+      feugiat et consequat
+    text: >-
+      Phasellus tortor magna, convallis sed felis tempor volutpat lorem quam.
+      Phasellus lacinia commodo. Vestibulum enim nibh adipiscing rhoncus at
+      tincidunt ac, feugiat ac dolor. Sed nec odio porta magna feugiat quam
+      posuere feugiat. Nullam porttitor sodales lorem ipsum dolor sit amet et
+      lorem ipsum dolor sit amet consequat feugiat lorem ipsum dolor amet
+      feugiat adipiscing sed phasellus aliquam.
+    actions:
+      - label: Learn More
+        url: no_sidebar.md
+        is_primary: false
+        is_scrolly: false
+  news:
+    title: News
+  contact:
+    title: Contact
+    contact_list:
+      - title: Address
+        text: |-
+          1234 Fictional Road Suite #5428
+          Nashville, TN 00000
+        icon: fa-home
+      - title: Phone
+        text: (800) 000-0000
+        icon: fa-phone
+      - title: Email
+        text: information@untitled.tld
+        icon: fa-envelope
+        url: '#'
+      - title: Facebook
+        text: facebook.com/untitled-tld
+        icon: fa-facebook
+        url: '#'
+      - title: Twitter
+        text: twitter.com/untitled-tld
+        icon: fa-twitter
+        url: '#'
+  copyright: '&copy; Untitled Corp. All rights reserved.'
+palette: cyan
+palettes:
+  cyan:
+    sass:
+      accent1: '#4bb2b6'
+      accent3: '#7b79b0'
+      accent4: '#6f6da5'
+  green:
+    sass:
+      accent1: '#00b47b'
+      accent3: '#4f91d2'
+      accent4: '#4486c5'
+  red:
+    sass:
+      accent1: '#d5505f'
+      accent3: '#2f89c3'
+      accent4: '#1e70a5'
+sass:
+  indentWidth: 4
+  style: nested
+  precision: 10
+plugins:
+  - jekyll-menus
+permalink: '/posts/:slug:output_ext'

@@ -1,0 +1,63 @@
+---
+label: Config
+hide_body: true
+is_partial: false
+fields:
+  - type: text
+    name: title
+    label: Title
+    description: Site title
+    config:
+      required: true
+  - type: text
+    name: landing_template
+    label: Landing Template
+    hidden: true
+    default: home
+  - type: field_group
+    name: header
+    label: Header Configuration
+    description: The page header
+    fields:
+      - type: field_group
+        name: submenu
+        label: Header Menu Submenus
+        description: The header menu option wit submenu options
+        fields:
+          - type: text
+            name: title
+            label: Submenu Title
+          - type: field_group_list
+            name: items
+            label: Submenu Items
+            config:
+              labelField: title
+            fields:
+              - type: text
+                name: title
+                label: Title
+              - type: text
+                name: url
+                label: URL
+      - type: field_group_list
+        name: actions
+        label: Menu Action Buttons
+        config:
+          labelField: label
+        fields:
+          - type: text
+            name: label
+            label: Label
+            description: text displayed inside the button
+          - type: text
+            name: url
+            label: URL
+          - type: boolean
+            name: is_primary
+            label: Is Primary
+            description: gives button a primary color scheme
+  - type: field_group
+    name: footer
+    label: Footer Configuration
+    description: The page footer
+    fields: []

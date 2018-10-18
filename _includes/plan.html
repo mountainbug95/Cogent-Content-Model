@@ -1,0 +1,20 @@
+<div class="col-4 col-12-medium">
+    <div class="plan">
+        <h3>{{ include.plan.title }}</h3>
+        {% if include.plan.features %}
+            <ul>
+                {% for feature in include.plan.features %}
+                    {% if feature.include %}
+                        <li><strong>{{ feature.text }}</strong></li>
+                    {% else %}
+                        <li>{{ feature.text }}</li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        {% endif %}
+        <span class="price"><strong>{{ include.plan.price }}</strong> / mo</span>
+        {% if include.plan.button %}
+            <a href="{{ include.plan.button.url | link | relative_url }}" class="button{% if include.plan.button.is_primary %} primary{% endif %} large fit">{{ include.plan.button.label }}</a>
+        {% endif %}
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="col-4 col-12-medium">
+
+    <!-- Sidebar -->
+    <section id="sidebar">
+        {% assign arr = site.posts | where_exp: 'item', 'item.show_in_sidebar != nil' | sort: 'date' | reverse %}
+        {% for spotlight in arr %}
+            <section>
+                {% if spotlight.content_img_path %}
+                    <a href="#" class="image fit"><img src="{{ spotlight.content_img_path | relative_url }}" alt="" /></a>
+                {% endif %}
+                <h3>{{ spotlight.title }}</h3>
+                <p>{{ spotlight.excerpt }}</p>
+                <footer>
+                    <ul class="actions">
+                        <li><a href="{{ spotlight.url | relative_url }}" class="button alt">Learn More</a></li>
+                    </ul>
+                </footer>
+            </section>
+            {% unless forloop.last %}
+                <hr />
+            {% endunless %}
+        {% endfor %}
+    </section>
+
+</div>
