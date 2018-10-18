@@ -1,0 +1,11 @@
+---
+label: Page
+is_partial: false
+fields: []
+pages:
+  - contact.md
+  - left_sidebar.md
+  - no_sidebar.md
+  - privacy.md
+  - right_sidebar.md
+  - terms.md

@@ -89,12 +89,15 @@ fields:
       - type: field_group
         name: news
         label: News Section
+        description: The footer news section
         fields:
           - type: text
             name: title
             label: News Section Title
       - type: field_group
         name: contact
+        label: Contact Section
+        description: The footer contact section
         fields:
           - type: text
             name: title
