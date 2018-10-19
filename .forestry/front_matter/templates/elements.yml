@@ -2,6 +2,16 @@
 label: Elements
 hide_body: true
 is_partial: false
-fields: []
+fields:
+  - type: textarea
+    name: title
+    label: Page Title
+  - type: textarea
+    name: subtitle
+    description: The text displayed below the title
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
 pages:
   - elements.md
