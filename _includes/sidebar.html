@@ -9,7 +9,7 @@
                     <a href="#" class="image fit"><img src="{{ spotlight.content_img_path | relative_url }}" alt="" /></a>
                 {% endif %}
                 <h3>{{ spotlight.title }}</h3>
-                <p>{{ spotlight.excerpt }}</p>
+                {{ spotlight.excerpt | markdownify }}
                 <footer>
                     <ul class="actions">
                         <li><a href="{{ spotlight.url | relative_url }}" class="button alt">Learn More</a></li>

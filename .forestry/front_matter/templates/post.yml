@@ -1,7 +1,52 @@
 ---
 label: Post
 is_partial: false
-fields: []
+fields:
+  - type: text
+    name: title
+    label: Page Title
+    config:
+      required: true
+  - type: textarea
+    name: subtitle
+    label: Page Subtitle
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+  - type: file
+    name: content_img_path
+    label: Content Image
+    description: The image displayed in the main content of the page
+  - type: select
+    name: sidebar
+    label: Sidebar
+    description: Sidebar position
+    config:
+      source:
+        type: custom
+      options:
+        - left
+        - right
+  - type: textarea
+    name: excerpt
+    label: Post Excerpt
+    description: Excerpt displayed in the home page footer or page sidebars
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+  - type: datetime
+    name: date
+    label: Post Date
+    config:
+      required: true
+  - type: boolean
+    name: show_in_footer_news
+    label: Show Post In Footer News
+  - type: boolean
+    name: show_in_sidebar
+    label: Show Post In Page Sidebars
 pages:
   - _posts/2015-03-15-post01.md
   - _posts/2015-03-24-post02.md
