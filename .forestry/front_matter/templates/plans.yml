@@ -74,6 +74,7 @@ fields:
         name: is_primary
         label: Is Primary
         description: Gives the button a primary color scheme
+        default: false
       - type: text
         name: url
         label: URL

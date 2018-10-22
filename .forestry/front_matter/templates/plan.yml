@@ -22,6 +22,7 @@ fields:
         description: >-
           If the feature is includeded in the plan, it will be displayed as bold
           text
+        default: false
   - type: text
     name: price
     label: Plan Price
@@ -41,3 +42,4 @@ fields:
         name: is_primary
         label: Is Primary
         description: Gives the button a primary color scheme
+        default: false
