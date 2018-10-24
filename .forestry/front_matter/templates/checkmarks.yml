@@ -1,6 +1,8 @@
 ---
 label: Checkmarks Section
+hide_body: true
 is_partial: true
+display_field: identifier
 fields:
   - type: text
     name: section_id
