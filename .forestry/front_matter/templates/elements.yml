@@ -13,5 +13,12 @@ fields:
       wysiwyg: true
       schema:
         format: markdown
+  - type: text
+    name: template
+    label: Template
+    hidden: true
+    default: elements
+    config:
+      required: true
 pages:
   - elements.md

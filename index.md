@@ -7,11 +7,11 @@ banner:
     dolor.
   actions:
     - label: Sign Up
-      url: no_sidebar.md
+      url: no-sidebar.md
       is_primary: true
       is_scrolly: false
     - label: Learn More
-      url: no_sidebar.md
+      url: no-sidebar.md
       is_primary: false
       is_scrolly: false
   browser_mockup:
@@ -113,7 +113,7 @@ sections:
         price: $4
         button:
           label: Sign Up
-          url: no_sidebar.md
+          url: no-sidebar.md
           is_primary: true
       - title: Pro
         features:
@@ -130,7 +130,7 @@ sections:
         price: $9
         button:
           label: Sign Up
-          url: no_sidebar.md
+          url: no-sidebar.md
           is_primary: true
       - title: Max
         features:
@@ -147,13 +147,13 @@ sections:
         price: $14
         button:
           label: Sign Up
-          url: no_sidebar.md
+          url: no-sidebar.md
           is_primary: true
     footer_button:
       text: Tempor et aliquam tincidunt aliquam lorem dolore?
       label: Learn More
       is_primary: false
-      url: no_sidebar.md
+      url: no-sidebar.md
     identifier: plans
     component: plans.html
     template: plans

@@ -49,6 +49,13 @@ fields:
     name: show_in_sidebar
     label: Show Post In Page Sidebars
     default: false
+  - type: text
+    name: template
+    label: Template
+    hidden: true
+    default: page
+    config:
+      required: true
 pages:
   - _posts/2015-03-15-post01.md
   - _posts/2015-03-24-post02.md

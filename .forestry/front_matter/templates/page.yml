@@ -28,10 +28,17 @@ fields:
       options:
         - left
         - right
+  - type: text
+    name: template
+    label: Template
+    hidden: true
+    default: page
+    config:
+      required: true
 pages:
   - contact.md
-  - left_sidebar.md
-  - no_sidebar.md
+  - left-sidebar.md
+  - no-sidebar.md
   - privacy.md
-  - right_sidebar.md
+  - right-sidebar.md
   - terms.md

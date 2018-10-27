@@ -6,14 +6,14 @@ header:
     title: Layouts
     items:
       - title: Left Sidebar
-        url: left_sidebar.md
+        url: left-sidebar.md
       - title: Right Sidebar
-        url: right_sidebar.md
+        url: right-sidebar.md
       - title: No Sidebar
-        url: no_sidebar.md
+        url: no-sidebar.md
   actions:
     - label: Sign Up
-      url: no_sidebar.md
+      url: no-sidebar.md
       is_primary: false
 footer:
   about:
@@ -29,7 +29,7 @@ footer:
       feugiat adipiscing sed phasellus aliquam.
     actions:
       - label: Learn More
-        url: no_sidebar.md
+        url: no-sidebar.md
         is_primary: false
         is_scrolly: false
   news:
