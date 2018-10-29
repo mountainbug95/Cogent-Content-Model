@@ -58,8 +58,8 @@ fields:
       - checkmarks
       - plans
   - type: text
-    name: template
-    label: Template
+    name: layout
+    label: Layout
     hidden: true
     default: home
     config:

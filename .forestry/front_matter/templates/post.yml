@@ -50,8 +50,8 @@ fields:
     label: Show Post In Page Sidebars
     default: false
   - type: text
-    name: template
-    label: Template
+    name: layout
+    label: Layout
     hidden: true
     default: page
     config:

@@ -14,8 +14,8 @@ fields:
       schema:
         format: markdown
   - type: text
-    name: template
-    label: Template
+    name: layout
+    label: Layout
     hidden: true
     default: elements
     config:

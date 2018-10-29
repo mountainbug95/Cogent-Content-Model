@@ -29,8 +29,8 @@ fields:
         - left
         - right
   - type: text
-    name: template
-    label: Template
+    name: layout
+    label: Layout
     hidden: true
     default: page
     config:
