@@ -2,7 +2,7 @@
 
     <!-- Sidebar -->
     <section id="sidebar">
-        {% assign arr = site.posts | where_exp: 'item', 'item.show_in_sidebar != nil' | sort: 'date' | reverse %}
+        {% assign arr = site.posts | where_exp: 'item', 'item.show_in_sidebar == true' | sort: 'date' | reverse %}
         {% for spotlight in arr %}
             <section>
                 {% if spotlight.content_img_path %}

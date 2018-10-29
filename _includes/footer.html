@@ -19,7 +19,7 @@
                 <section class="col-4 col-6-medium col-12-xsmall">
                     <h3>{{ site.footer.news.title }}</h3>
                     <ul class="updates">
-                        {% assign arr = site.posts | where_exp: 'item', 'item.show_in_footer_news == false' | sort: 'date' | reverse %}
+                        {% assign arr = site.posts | where_exp: 'item', 'item.show_in_footer_news == true' | sort: 'date' | reverse %}
                         {% for post in arr %}
                             <li>
                                 <p><a href="{{ post.url | relative_url }}">{{ post.excerpt }}</a></p>
