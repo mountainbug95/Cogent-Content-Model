@@ -38,7 +38,7 @@ sections:
         icon: fa-mobile-phone
     identifier: features
     component: features.html
-    template: features
+    widget: features
   - section_id: two
     background_style: style2
     spotlights_list:
@@ -66,7 +66,7 @@ sections:
           path: images/pic02.jpg
     identifier: spotlights
     component: spotlights.html
-    template: spotlights
+    widget: spotlights
   - title: |-
       Augue velit lorem pellentesque
       tempus aliquet adipiscing
@@ -90,7 +90,7 @@ sections:
       - text: Quisque nec enim
     identifier: checkmarks
     component: checkmarks.html
-    template: checkmarks
+    widget: checkmarks
   - title: Magna feugiat sed consequat
     subtitle: >-
       Vivamus nec odio tempor et aliquam tincidunt aliquam lorem dolore
@@ -156,6 +156,6 @@ sections:
       url: no-sidebar.md
     identifier: plans
     component: plans.html
-    template: plans
+    widget: plans
 layout: home
 ---
