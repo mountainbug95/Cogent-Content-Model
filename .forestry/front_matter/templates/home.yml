@@ -11,6 +11,7 @@ fields:
       required: true
   - type: field_group
     name: banner
+    label: Banner
     description: The home page banner
     fields:
       - type: text
@@ -31,7 +32,7 @@ fields:
         fields:
           - type: include
             name: include_action
-            label: Include action
+            label: Action
             template: action
       - type: field_group
         name: browser_mockup

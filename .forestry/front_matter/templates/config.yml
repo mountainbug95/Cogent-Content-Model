@@ -85,7 +85,7 @@ fields:
             fields:
               - type: include
                 name: include_action
-                label: Include action
+                label: Action
                 template: action
       - type: field_group
         name: news
@@ -139,3 +139,43 @@ fields:
         - cyan
         - green
         - red
+  - type: field_group
+    name: palettes
+    hidden: true
+    fields:
+      - type: field_group
+        name: cyan
+        fields:
+          - type: field_group
+            name: sass
+            fields:
+              - type: text
+                name: accent1
+              - type: text
+                name: accent3
+              - type: text
+                name: accent4
+      - type: field_group
+        name: green
+        fields:
+          - type: field_group
+            name: sass
+            fields:
+              - type: text
+                name: accent1
+              - type: text
+                name: accent3
+              - type: text
+                name: accent4
+      - type: field_group
+        name: red
+        fields:
+          - type: field_group
+            name: sass
+            fields:
+              - type: text
+                name: accent1
+              - type: text
+                name: accent3
+              - type: text
+                name: accent4
