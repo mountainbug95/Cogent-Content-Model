@@ -141,41 +141,30 @@ fields:
         - red
   - type: field_group
     name: palettes
+    label: Palettes
     hidden: true
     fields:
       - type: field_group
         name: cyan
+        label: Cyan
         fields:
-          - type: field_group
-            name: sass
-            fields:
-              - type: text
-                name: accent1
-              - type: text
-                name: accent3
-              - type: text
-                name: accent4
+          - type: include
+            name: include_palette
+            label: Palette
+            template: palette
       - type: field_group
         name: green
+        label: Green
         fields:
-          - type: field_group
-            name: sass
-            fields:
-              - type: text
-                name: accent1
-              - type: text
-                name: accent3
-              - type: text
-                name: accent4
+          - type: include
+            name: include_palette
+            label: Palette
+            template: palette
       - type: field_group
         name: red
+        label: Red
         fields:
-          - type: field_group
-            name: sass
-            fields:
-              - type: text
-                name: accent1
-              - type: text
-                name: accent3
-              - type: text
-                name: accent4
+          - type: include
+            name: include_palette
+            label: Palette
+            template: palette
