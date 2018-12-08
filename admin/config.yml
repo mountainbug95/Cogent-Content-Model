@@ -177,6 +177,7 @@ collections:
           - name: palettes
             widget: hidden
             required: false
+            label: Palettes
   - name: home
     label: Home
     files:
@@ -287,6 +288,7 @@ collections:
                   - name: component
                     widget: hidden
                     required: true
+                    label: Section Component
                     default: features.html
                   - name: features_list
                     widget: list
@@ -339,6 +341,7 @@ collections:
                   - name: component
                     widget: hidden
                     required: true
+                    label: Section Component
                     default: spotlights.html
                   - name: spotlights_list
                     widget: list
@@ -403,6 +406,7 @@ collections:
                   - name: component
                     widget: hidden
                     required: true
+                    label: Section Component
                     default: checkmarks.html
                   - name: title
                     widget: text
@@ -465,6 +469,7 @@ collections:
                   - name: component
                     widget: hidden
                     required: true
+                    label: Section Component
                     default: plans.html
                   - name: title
                     widget: string
@@ -673,6 +678,7 @@ collections:
           - name: subtitle
             widget: markdown
             required: false
+            label: Page Subtitle
             hint: The text displayed below the title
           - name: layout
             widget: hidden
