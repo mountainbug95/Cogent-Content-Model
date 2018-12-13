@@ -18,7 +18,8 @@ banner:
     img: images/banner.jpg
     mock_url: 'http://untitledapp.tld'
 sections:
-  - section_id: one
+  - title: Features Section
+    section_id: one
     background_style: style1
     features_list:
       - title: Magna feugiat ipsum
@@ -39,7 +40,8 @@ sections:
     identifier: features
     component: features.html
     template: features
-  - section_id: two
+  - title: Spotlights Section
+    section_id: two
     background_style: style2
     spotlights_list:
       - title: Etiam lorem sed tempus magna adipiscing
