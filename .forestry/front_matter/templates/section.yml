@@ -2,8 +2,16 @@
 label: Section
 hide_body: true
 is_partial: true
-display_field: identifier
+display_field: title
 fields:
+  - type: text
+    name: title
+    label: Section Title
+    description: >-
+      The title displayed at the top of the section (Also used by the CMS, even
+      if the section has no title)
+    config:
+      required: true
   - type: text
     name: section_id
     label: Section ID
@@ -22,12 +30,6 @@ fields:
         - style2
         - style3
         - style4
-  - type: text
-    name: identifier
-    label: Section Name
-    description: 'The name of the section, this value is not displayed anywhere on the page'
-    config:
-      required: true
   - type: text
     name: component
     label: Section Component
